@@ -10,7 +10,7 @@
   "Tinybit.Line_Sensor|block": "ラインセンサー|位置 %direct|検出 %value",
   "Tinybit.CarCtrl|block": "車の動き|%index",
   "Tinybit.CarCtrlSpeed|block": "車の動きと速度|%index|速度 %speed",
-  "Tinybit.CarCtrlSpeed2|block": "左右のモーターの速度|%index|左モーター %speedL|右モーター %speedR",
+  "Tinybit.CarCtrlSpeed2|block": "左右のモーターの速度|%index|左モーター %speed1|右モーター %speed2",
   "Tinybit.enColor.OFF|block": "消灯",
   "Tinybit.enColor.Red|block": "赤色",
   "Tinybit.enColor.Green|block": "緑色",
