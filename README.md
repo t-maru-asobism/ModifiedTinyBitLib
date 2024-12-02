@@ -1,6 +1,6 @@
 # Tiny:bit
 
-Extension for Yahboom Tiny:bit V2.0.3
+Modified Extension for Yahboom Tiny:bit V2.0.3
 
 ## License
 
