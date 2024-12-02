@@ -44,8 +44,8 @@
 
   "Tinybit.enPos.LeftState|block": "左側",
   "Tinybit.enPos.RightState|block": "右側",
-  "Tinybit.enLineState.White|block": "白線",
-  "Tinybit.enLineState.Black|block": "黒線",
+  "Tinybit.enLineState.White|block": "白",
+  "Tinybit.enLineState.Black|block": "黒",
   
   "Tinybit.CarState.Car_Run|block": "前進",
   "Tinybit.CarState.Car_Back|block": "後退",
