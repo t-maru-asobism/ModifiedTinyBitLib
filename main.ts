@@ -380,6 +380,27 @@ namespace Tinybit {
 
     }
 
+    //% blockId=Tinybit_Line_SensorRaw block="Line_SensorRaw|direct %direct|value %value"
+    //% weight=89
+    //% blockGap=10
+    //% color="#006400"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
+    export function Line_SensorRaw(direct: enPos): number {
+
+        let temp: number = 0.0;
+        switch (direct) {
+            case enPos.LeftState: {
+				temp = pins.analogReadPin(DigitalPin.P13);
+            }
+
+            case enPos.RightState: {
+				temp = pins.analogReadPin(DigitalPin.P14);
+            }
+        }
+        return temp;
+
+    }
+
     //% blockId=Tinybit_Voice_Sensor block="Voice Sensor return"
     //% weight=88
     //% blockGap=10
