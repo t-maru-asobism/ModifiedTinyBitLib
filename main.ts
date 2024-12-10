@@ -34,7 +34,39 @@ namespace Tinybit {
         Yellow,
 
     }
-    export enum enMusic {
+        export enum enPos {
+
+        //% blockId="LeftState" block="LeftState"
+        LeftState = 0,
+        //% blockId="RightState" block="RightState"
+        RightState = 1
+    }
+
+    export enum enLineState {
+        //% blockId="White" block="White Line"
+        White = 0,
+        //% blockId="Black" block="Black Line"
+        Black = 1
+    }
+    
+    
+    export enum CarState {
+        //% blockId="Car_Run" block="Run"
+        Car_Run = 1,
+        //% blockId="Car_Back" block="Back"
+        Car_Back = 2,
+        //% blockId="Car_Left" block="Left"
+        Car_Left = 3,
+        //% blockId="Car_Right" block="Right"
+        Car_Right = 4,
+        //% blockId="Car_Stop" block="Stop"
+        Car_Stop = 5,
+        //% blockId="Car_SpinLeft" block="SpinLeft"
+        Car_SpinLeft = 6,
+        //% blockId="Car_SpinRight" block="SpinRight"
+        Car_SpinRight = 7
+    }
+export enum enMusic {
 
         //% blockId="dadadum" block="dadadum"
         dadadum = 0,
@@ -77,38 +109,6 @@ namespace Tinybit {
         //% blockId="power_down" block="power_down"
         power_down
 
-    }
-    export enum enPos {
-
-        //% blockId="LeftState" block="LeftState"
-        LeftState = 0,
-        //% blockId="RightState" block="RightState"
-        RightState = 1
-    }
-
-    export enum enLineState {
-        //% blockId="White" block="White Line"
-        White = 0,
-        //% blockId="Black" block="Black Line"
-        Black = 1
-    }
-    
-    
-    export enum CarState {
-        //% blockId="Car_Run" block="Run"
-        Car_Run = 1,
-        //% blockId="Car_Back" block="Back"
-        Car_Back = 2,
-        //% blockId="Car_Left" block="Left"
-        Car_Left = 3,
-        //% blockId="Car_Right" block="Right"
-        Car_Right = 4,
-        //% blockId="Car_Stop" block="Stop"
-        Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="SpinLeft"
-        Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="SpinRight"
-        Car_SpinRight = 7
     }
 
     function setPwmRGB(red: number, green: number, blue: number): void {
@@ -259,7 +259,7 @@ namespace Tinybit {
     }
 
 	//% blockId=Tinybit_CarCtrl block="CarCtrl|%index"
-    //% weight=93
+    //% weight=96
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
@@ -276,7 +276,7 @@ namespace Tinybit {
     }
     
     //% blockId=Tinybit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
-    //% weight=92
+    //% weight=95
     //% blockGap=10
     //% speed.min=0 speed.max=255
     //% color="#006400"
@@ -294,7 +294,7 @@ namespace Tinybit {
     }
     
     //% blockId=Tinybit_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
-    //% weight=91
+    //% weight=94
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
     //% color="#006400"
@@ -364,7 +364,7 @@ namespace Tinybit {
     }
 
     //% blockId=Tinybit_Music_Car block="Music_Car|%index"
-    //% weight=95
+    //% weight=87
     //% blockGap=10
     //% color="#006400"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -395,7 +395,7 @@ namespace Tinybit {
 
     //% blockId=Tinybit_Ultrasonic_Car block="ultrasonic return distance(cm)"
     //% color="#006400"
-    //% weight=87
+    //% weight=86
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Ultrasonic_Car(): number {
@@ -419,7 +419,7 @@ namespace Tinybit {
         
     //% blockId=Tinybit_Ultrasonic_CarV2 block="ultrasonic for V2 return distance(cm)"
     //% color="#006400"
-    //% weight=87
+    //% weight=85
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Ultrasonic_CarV2(): number {
@@ -437,7 +437,7 @@ namespace Tinybit {
 
     //% blockId=Tinybit_motor_pid block="Tinybit_motor_pid|motor_left:%sp_L|motor_right:%sp_R"
     //% color="#006400"
-    //% weight=87
+    //% weight=82
     //% sp_L.min=-255 sp_L.max=255  sp_R.min=-255 sp_R.max=255
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
