@@ -323,8 +323,8 @@ export enum enMusic {
         let temp: boolean = false;
 //		pins.setPull(DigitalPin.P13, PinPullMode.PullNone);
 //		pins.setPull(DigitalPin.P14, PinPullMode.PullNone);
-		pins.setPull(DigitalPin.P13, PinPullMode.PullDown);
-		pins.setPull(DigitalPin.P14, PinPullMode.PullDown);
+		pins.setPull(DigitalPin.P13, PinPullMode.PullUp);
+		pins.setPull(DigitalPin.P14, PinPullMode.PullUp);
         switch (direct) {
             case enPos.LeftState: {
                 if (pins.digitalReadPin(DigitalPin.P13) == value) {              
